@@ -1,0 +1,14 @@
+<ul ng-repeat="ni in newsItems">
+  <li>
+    <div>
+      <div>
+        <span>
+          <h6>({{ni.categories}}) - {{ni.publishedDate}}</h6>
+          <h4>{{ni.title}}</h4>
+        </span>
+        <span><a href="{{ni.link}}">{{ni.contentSnippet}}</a></span>
+      </div>
+      <div ng-bind-html-unsafe="{{ni.content}}"></div>
+    </div>
+  </li>
+</ul>
